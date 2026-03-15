@@ -2,9 +2,9 @@ package model.dao.impl;
 
 import java.util.List;
 
-import model.dao.ObjectDao;
+import model.dao.GenericDao;
 
-public class DepartmentDaoJDBC implements ObjectDao{
+public class DepartmentDaoJDBC implements GenericDao{
 
 	@Override
 	public void insert(Object obj) {
