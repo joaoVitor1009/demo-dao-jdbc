@@ -6,11 +6,11 @@ import model.dao.impl.SellerDaoJDBC;
 
 public class DaoFactory {
 
-	public static GenericDao createSellerDao() {
+	public static SellerDao createSellerDao() {
 		return new SellerDaoJDBC(DB.getConnection());
 	}
 
-	public static GenericDao createDepartmentDao() {
-		return new DepartmentDaoJDBC();
+	public static DepartmentDao createDepartmentDao() {
+		return new DepartmentDaoJDBC(DB.getConnection());
 	}
 }
